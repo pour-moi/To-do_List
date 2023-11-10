@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: rgb(214, 209, 209);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../Roboto-Regular.ttf);
+}
+
+#container {
+  background-color: white;
+  height: 4em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.day {
+  font-family: Roboto;
+  color: rgb(85, 83, 83);
+}
+
+.dates {
+  font-size: 1em;
+  margin-top: 0.5em;
+  padding: 2px;
+}
+
+.days,
+.dates {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Date {
+  background-color: white;
+  display: flex;
+  justify-content: start;
+}
+
+.theDate {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Roboto;
+  padding-left: 0.6em;
+}
+
+.addingButton {
+  display: flex;
+  justify-content: end;
+}
+
+.plusSign {
+  position: absolute;
+  bottom: 0;
+  margin: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #6b2cf5, #d450e6);
+  color: white;
+  height: 1.1em;
+  width: 1.1em;
+  font-size: 2em;
+  border-radius: 50%;
+  border: none;
+}
+
+.box {
+  border-radius: 1em;
+  margin: 0.6em;
+  background-color: white;
+  min-height: 10em;
+  min-width: 21em;
+}
