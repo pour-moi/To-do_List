@@ -161,7 +161,7 @@ label {
   display: flex;
   flex-direction: column;
   align-items: space-around;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .time-item {
@@ -179,4 +179,21 @@ label {
   border-bottom: 1px dashed #aca8a8;
   width: 84%;
   margin-left: 2em;
+}
+
+.task-box {
+  font-family: Tommy;
+  font-size: 0.7em;
+  margin: 0;
+  margin-left: 4em;
+  background-color: #f0f0f0;
+  height: 35px;
+  width: 84%;
+  text-align: start;
+  border-radius: 1em;
+  margin-bottom: 0;
+}
+.task-box p {
+  margin: 0;
+  margin-left: 1.6em;
 }
