@@ -13,45 +13,50 @@
       <div id="container">
         <div class="days"></div>
       </div>
-      <div class="box"></div>
+      <div class="time-container">
+      <div class="time-list"></div>
+      </div>
       <div class="addingButton">
-        <button class="plusSign">+</button>
+        <button class="plusSign">Add Task</button>
       </div>
     </div>
 
     <!-- Adding Tasks -->
+    <div class="new_Task">
     <h1 class="task">New Task</h1>
     <div class="addTask">
       <form id="todo-form">
         <label for="title">Title</label><br />
-        <input type="text" id="title" name="title" class="underline-input" />
+        <input type="text" id="title" name="title" class="underline-input" required/>
         <br />
         <label for="date">Date</label><br />
-        <input type="date" id="date" name="date" class="underline-input" />
+        <input type="date" id="date" name="date" class="underline-input" required/>
         <br />
         <div class="start_end">
-          <div>
+          <div class="start">
             <label for="start">Start Time</label>
             <input
               type="time"
               id="start"
               name="start"
               class="underline-input"
-            />
+            required/>
           </div>
+          <div class="end">
           <label for="end">End Time:</label>
-          <input type="time" id="end" name="end" class="underline-input" />
+          <input type="time" id="end" name="end" class="underline-input" required/>
         </div>
-        <label for="description">Description:</label>
+        </div>
+        <label for="description">Description</label>
         <br />
         <textarea
           id="description"
           name="description"
           class="underline-input"
         ></textarea>
-
-        <!-- <input type="submit" value="Add Task" /> -->
       </form>
+              <button class="add_task">Create New Task</button>
+    </div>
     </div>
   </body>
 </html>
