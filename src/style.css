@@ -165,17 +165,18 @@ label {
 }
 
 .time-item {
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-left: 0.5em;
   font-family: Tommy;
+  color: rgb(85, 83, 83);
   margin-right: 10px;
 }
 
 .dashed-line {
   position: relative;
-  top: -10px;
+  top: -9px;
   align-self: center;
-  border-bottom: 1px dashed #000;
-  width: 80%;
+  border-bottom: 1px dashed #aca8a8;
+  width: 84%;
   margin-left: 2em;
 }
