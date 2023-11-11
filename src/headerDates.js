@@ -71,6 +71,9 @@ export const headerDates = () => {
     const timeContainer = document.createElement("div");
     timeContainer.classList.add("time-container");
 
+    // Set the data-start-time attribute
+    timeContainer.setAttribute("data-start-time", time);
+
     const timeItem = document.createElement("div");
     timeItem.classList.add("time-item");
     timeItem.textContent = time;
@@ -82,4 +85,24 @@ export const headerDates = () => {
 
     timeListContainer.appendChild(timeContainer); // Append the container
   });
+};
+export const addTask = (task, startTime, endTime) => {
+  // Create a new div for the task box
+  const taskBox = document.createElement("div");
+  taskBox.classList.add("task-box");
+
+  // Add the task details to the task box
+  const taskText = document.createElement("p");
+  taskText.textContent = task;
+  taskBox.appendChild(taskText);
+
+  const taskTime = document.createElement("p");
+  taskTime.textContent = `${startTime} - ${endTime}`;
+  taskBox.appendChild(taskTime);
+
+  // Find the corresponding time container and append the task box to it
+  const timeContainer = document.querySelector(
+    `.time-container[data-start-time="${startTime}"]`
+  );
+  timeContainer.appendChild(taskBox);
 };
