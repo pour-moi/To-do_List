@@ -19,7 +19,6 @@ body {
   src: url(../MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
 }
 
-
 @font-face {
   font-family: "Mont_light";
   src: url(../Mont-ExtraLightDEMO.otf);
@@ -40,7 +39,7 @@ body {
   font-size: 1em;
   margin-top: 0.5em;
   padding: 2px;
-  font-family:Mont_bold;
+  font-family: Mont_bold;
 }
 
 .days,
@@ -74,14 +73,14 @@ body {
   margin: 1.5em;
   margin-top: 1.7em;
   color: white;
-  margin-right:2em;
+  margin-right: 2em;
   background: linear-gradient(to right, #6b2cf5, #d450e6);
-  padding:0.5em;
-  padding-left:1.6em;
-  padding-right:1.6em;
+  padding: 0.5em;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
   border-radius: 1em;
   border-style: none;
-  font-family:Mont_bold;
+  font-family: Mont_bold;
 }
 
 .box {
@@ -91,9 +90,6 @@ body {
   min-height: 10em;
   min-width: 21em;
 }
-
-
-
 .underline-input {
   border: none;
   border-bottom: 1px solid rgb(187, 185, 185);
@@ -105,11 +101,11 @@ body {
 }
 
 #description,
-#title{
-  font-family:Tommy;
+#title {
+  font-family: Tommy;
 }
 
-#date{
+#date {
   font-family: Mont_light;
 }
 .addTask {
@@ -120,9 +116,9 @@ body {
 
 .task {
   margin-top: 2.1em;
-  margin-bottom:1.2em;
+  margin-bottom: 1.2em;
   margin-left: 0.5em;
-  font-family:Mont_bold;
+  font-family: Mont_bold;
 }
 
 #todo-form input,
@@ -132,39 +128,54 @@ body {
 
 .start_end {
   display: flex;
-  gap:1em;
+  gap: 1em;
 }
 
-.start,.end{
-  display:flex;
-  flex-direction:column;
-  width:8em;
+.start,
+.end {
+  display: flex;
+  flex-direction: column;
+  width: 8em;
 }
-label{
-  margin-bottom:1em;
-  font-family:Mont_light;
-  font-size:small;
+label {
+  margin-bottom: 1em;
+  font-family: Mont_light;
+  font-size: small;
 }
-.add_task{
-  margin-left:7em;
-  margin-top:5em;
+.add_task {
+  margin-left: 7em;
+  margin-top: 5em;
   background: linear-gradient(to right, #6b2cf5, #d450e6);
-  padding:1em;
+  padding: 1em;
   border-radius: 1em;
   border-style: none;
-  color:white;
-  font-family:Mont_bold;
+  color: white;
+  font-family: Mont_bold;
 }
 
-.new_Task{
-  display:none;
+.new_Task {
+  display: none;
 }
 
-.time-item{
-  font-size:0.9em;
-  margin-left:0.5em;
-  margin-bottom:3em;
-  font-family:Tommy;
+.time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin-bottom: 2em;
 }
 
+.time-item {
+  font-size: 0.9em;
+  margin-left: 0.5em;
+  font-family: Tommy;
+  margin-right: 10px;
+}
 
+.dashed-line {
+  position: relative;
+  top: -10px;
+  align-self: center;
+  border-bottom: 1px dashed #000;
+  width: 80%;
+  margin-left: 2em;
+}
