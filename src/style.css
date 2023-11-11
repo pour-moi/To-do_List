@@ -9,6 +9,22 @@ body {
   src: url(../Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Mont_bold";
+  src: url(../Mont-HeavyDEMO.otf);
+}
+
+@font-face {
+  font-family: "Tommy";
+  src: url(../MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+
+
+@font-face {
+  font-family: "Mont_light";
+  src: url(../Mont-ExtraLightDEMO.otf);
+}
+
 #container {
   background-color: white;
   height: 4em;
@@ -16,7 +32,7 @@ body {
   border-bottom-right-radius: 1em;
 }
 .day {
-  font-family: Roboto;
+  font-family: Tommy;
   color: rgb(85, 83, 83);
 }
 
@@ -24,6 +40,7 @@ body {
   font-size: 1em;
   margin-top: 0.5em;
   padding: 2px;
+  font-family:Mont_bold;
 }
 
 .days,
@@ -42,7 +59,7 @@ body {
 .theDate {
   font-size: 1.5em;
   font-weight: bold;
-  font-family: Roboto;
+  font-family: Tommy;
   padding-left: 0.6em;
 }
 
@@ -53,18 +70,18 @@ body {
 
 .plusSign {
   position: absolute;
-  bottom: 0;
-  margin: 0.4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #6b2cf5, #d450e6);
+  top: 0;
+  margin: 1.5em;
+  margin-top: 1.7em;
   color: white;
-  height: 1.1em;
-  width: 1.1em;
-  font-size: 2em;
-  border-radius: 50%;
-  border: none;
+  margin-right:2em;
+  background: linear-gradient(to right, #6b2cf5, #d450e6);
+  padding:0.5em;
+  padding-left:1.6em;
+  padding-right:1.6em;
+  border-radius: 1em;
+  border-style: none;
+  font-family:Mont_bold;
 }
 
 .box {
@@ -75,28 +92,37 @@ body {
   min-width: 21em;
 }
 
-.test {
-  display: none;
-}
+
 
 .underline-input {
   border: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(187, 185, 185);
   outline: none;
 }
 #title,
 #date {
-  width: 25em;
+  width: 20em;
+}
+
+#description,
+#title{
+  font-family:Tommy;
+}
+
+#date{
+  font-family: Mont_light;
 }
 .addTask {
   height: 100%;
-  width: 100%;
+  width: 90%;
   margin: 1em;
 }
 
 .task {
-  margin-top: 1em;
+  margin-top: 2.1em;
+  margin-bottom:1.2em;
   margin-left: 0.5em;
+  font-family:Mont_bold;
 }
 
 #todo-form input,
@@ -106,7 +132,39 @@ body {
 
 .start_end {
   display: flex;
+  gap:1em;
 }
-#start,
-#end {
+
+.start,.end{
+  display:flex;
+  flex-direction:column;
+  width:8em;
 }
+label{
+  margin-bottom:1em;
+  font-family:Mont_light;
+  font-size:small;
+}
+.add_task{
+  margin-left:7em;
+  margin-top:5em;
+  background: linear-gradient(to right, #6b2cf5, #d450e6);
+  padding:1em;
+  border-radius: 1em;
+  border-style: none;
+  color:white;
+  font-family:Mont_bold;
+}
+
+.new_Task{
+  display:none;
+}
+
+.time-item{
+  font-size:0.9em;
+  margin-left:0.5em;
+  margin-bottom:3em;
+  font-family:Tommy;
+}
+
+
