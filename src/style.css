@@ -6,22 +6,22 @@ body {
 
 @font-face {
   font-family: "Roboto";
-  src: url(../Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family: "Mont_bold";
-  src: url(../Mont-HeavyDEMO.otf);
+  src: url(../fonts/Mont-HeavyDEMO.otf);
 }
 
 @font-face {
   font-family: "Tommy";
-  src: url(../MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+  src: url(../fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
 }
 
 @font-face {
   font-family: "Mont_light";
-  src: url(../Mont-ExtraLightDEMO.otf);
+  src: url(../fonts/Mont-ExtraLightDEMO.otf);
 }
 
 #container {
