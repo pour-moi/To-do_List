@@ -1,7 +1,7 @@
 export const addTask = () => {
-  const Title = document.getElementById("#title");
-  const startTime = document.getElementById("#start");
-  const endTime = document.getElementById("#end");
+  const Title = document.getElementById("title");
+  const startTime = document.getElementById("start");
+  const endTime = document.getElementById("end");
 
   function Lists(task, strTime, edTime) {
     this.task = task;
@@ -19,7 +19,7 @@ export const addTask = () => {
     return newTask;
   }
 
-  let todo = document.getElementById("#todo");
+  let todo = document.getElementById("to-do");
 
   const myTask = [];
   const button = document.querySelector(".add_task");
